@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
@@ -25,7 +26,7 @@ export const metadata = {
   keywords: "Web Development Services in Baghpat, Software Development Company in Baghpat, Website Design Company in Baghpat, Ecommerce Website Developer in Baghpat",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
