@@ -59,11 +59,7 @@ const HeroSection = () => {
               </Link> */}
             </div>
 
-            <div className="mt-10 flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
-              <div className="flex items-center"><span className="text-accent mr-2">✓</span> Fast Delivery</div>
-              <div className="flex items-center"><span className="text-accent mr-2">✓</span> SEO Friendly</div>
-              <div className="flex items-center"><span className="text-accent mr-2">✓</span> 24/7 Support</div>
-            </div>
+
           </div>
 
           {/* enquery form */}
