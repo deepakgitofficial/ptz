@@ -12,15 +12,15 @@ const HeroSection = () => {
 
       {/* Background Video & Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* <video
+        <video
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover"
-        > 
+        >
           <source src="/hero2.mp4" type="video/mp4" />
-        </video> */}
+        </video>
         {/* Dark overlay to make text readable */}
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70 mix-blend-multiply" />
 
