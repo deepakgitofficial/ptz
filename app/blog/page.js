@@ -99,7 +99,7 @@ export default async function BlogListingPage() {
                   )}
                   {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/70 to-accent/70 mix-blend-multiply"></div> */}
                   {/* Category */}
-                  <div className="absolute top-4 left-4 bg-primary backdrop-blur-md px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-wider">
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-primary to-accent backdrop-blur-lg px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-wider">
                     {post?.category?.replace("-", " ")}
                   </div>
                 </div>

@@ -1,28 +1,30 @@
 import React from 'react';
 import Link from 'next/link';
 import { Monitor, Smartphone, PenTool, Server, ArrowRight, TrendingUp, Search } from 'lucide-react';
-
+import { FaWordpress } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { IoDesktopOutline } from "react-icons/io5";
 const ServicesSection = () => {
   const services = [
     {
       title: 'Website Development',
-      icon: <Monitor className="h-8 w-8 text-primary" />,
-      desc: 'Custom websites built with modern technologies like Next.js, React, and Node.js for maximum speed.',
+      icon: <FaGlobe className="h-8 w-8 text-primary" />,
+      desc: 'We design and develop high-performance, responsive websites that are SEO-friendly, fast, and built to convert across all devices.',
       path: '/services/web-development'
     },
 
     {
       title: 'WordPress Development',
-      icon: <Search className="h-8 w-8 text-blue-500" />,
-      desc: 'Custom WordPress websites built with modern technologies for maximum speed and functionality.',
+      icon: <FaWordpress className="h-8 w-8 text-blue-500" />,
+      desc: 'Custom WordPress websites that are fast, secure, responsive, and easy to manage—built to grow your business.',
       path: '/services/wordpress-development'
     },
 
     {
       title: 'Web Application Development',
-      icon: <TrendingUp className="h-8 w-8 text-accent" />,
-      desc: 'Scalable web applications built with Next.js, React, and Node.js for complex business needs.',
-      path: '/services/web-application-development'
+      icon: <IoDesktopOutline className="h-8 w-8 text-accent" />,
+      desc: 'High-performance, responsive web apps using React & Next.js that are quick, smooth, and work well on all devices',
+      path: '/services/web-development'
     },
     // {
     //   title: 'Small Business Websites',
@@ -44,20 +46,20 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Core Services</h2>
+          {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Core Services</h2> */}
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
-            Comprehensive Digital Solutions
+            Our Services
           </h3>
-          <p className="text-gray-100 dark:text-gray-400 text-lg">
+          {/* <p className="text-gray-100 dark:text-gray-400 text-lg">
             We provide an end-to-end suite of required web services to help your business grow and thrive in the modern age.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-8 bg-gray-50 dark:bg-[#111111] rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-2xl hover:border-primary/50  transition-all duration-300 group"
+              className="p-8 bg-[#ffffff] dark:bg-[#111111] rounded-2xl border border-gray-300 dark:border-gray-800 hover:shadow-2xl hover:border-primary/50  transition-all duration-300 group"
             >
               <div className="mb-6 p-4 bg-white dark:bg-[#1a1a1a] shadow-sm rounded-xl w-fit group-hover:bg-primary/10 transition-colors">
                 {service.icon}

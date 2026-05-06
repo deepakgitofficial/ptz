@@ -43,7 +43,7 @@ const EnqueryForm = () => {
         <h3 className="text-2xl font-bold text-white mb-2">
           Get in Touch
         </h3>
-        <p className="text-sm text-gray-200">
+        <p className="text-sm text-white/60 dark:text-white/80">
           Start your digital journey with us.
         </p>
       </div>

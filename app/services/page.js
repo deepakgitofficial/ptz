@@ -10,6 +10,9 @@ import {
 } from "lucide-react";
 import { servicesData } from "@/data/services";
 import CTASection from "@/components/home/CTASection";
+import { FaWordpress } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { IoDesktopOutline } from "react-icons/io5";
 
 export const metadata = {
   title: "Our Services | Pure Tech Zone",
@@ -20,10 +23,10 @@ export const metadata = {
 // Helper function to render correct Lucide icon
 const IconComponent = ({ iconName, className }) => {
   const icons = {
-    Monitor: <Monitor className={className} />,
-    TrendingUp: <TrendingUp className={className} />,
+    Monitor: <FaGlobe className={className} />,
+    // TrendingUp: <TrendingUp className={className} />,
     Search: <Search className={className} />,
-    PenTool: <PenTool className={className} />,
+    PenTool: <FaWordpress className={className} />,
   };
   return icons[iconName] || <Monitor className={className} />;
 };

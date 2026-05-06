@@ -58,13 +58,13 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Pricing Plans</h2>
+          {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Pricing Plans</h2> */}
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
-            Affordable Packages for Every Need
+            Pricing Plans
           </h3>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          {/* <p className="text-gray-600 dark:text-gray-400 text-lg">
             Transparent pricing with no hidden fees. Choose the plan that best fits your business goals and budget.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -72,8 +72,8 @@ const PricingSection = () => {
             <div
               key={index}
               className={`relative bg-white dark:bg-[#111111] rounded-3xl p-8 flex flex-col h-full border ${plan.isPopular
-                  ? 'border-primary ring-2 ring-primary/20 shadow-2xl transform md:-translate-y-4'
-                  : 'border-gray-100 dark:border-gray-800 shadow-lg'
+                ? 'border-primary ring-2 ring-primary/20 shadow-2xl transform md:-translate-y-4'
+                : 'border-gray-100 dark:border-gray-800 shadow-lg'
                 }`}
             >
               {plan.isPopular && (

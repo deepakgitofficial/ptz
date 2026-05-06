@@ -18,16 +18,16 @@ const PortfolioSection = () => {
   return (
     <section className="py-24 bg-gray-50 dark:bg-[#0c121e]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="max-w-2xl text-left mb-6 md:mb-0">
-            <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Portfolio</h2>
+            {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Portfolio</h2> */}
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-heading">
-              Latest Work We've Done
+              Our Portfolio
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
+            {/* <p className="text-gray-600 dark:text-gray-400 text-lg">
               Explore some of our recently completed projects. Each website is built with passion, precision, and performance in mind.
-            </p>
+            </p> */}
           </div>
           <Link href="/portfolio" className="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors shrink-0">
             View All Projects <ArrowRight className="ml-2 w-5 h-5" />
@@ -47,13 +47,13 @@ const PortfolioSection = () => {
         >
           {projects.slice(0, 6).map((project) => (
             <div key={project.id} className="relative group rounded-2xl overflow-hidden shadow-lg h-[400px]">
-              
+
               {/* Background Image */}
               <div className="absolute inset-0 w-full h-full">
-                <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  fill 
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />

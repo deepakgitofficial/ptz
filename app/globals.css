@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
   --color-primary: #00c2f0;
   --color-primary-dark: #0f4560;
@@ -8,6 +9,7 @@
   --color-accent: #00bfaa;
   --font-heading: 'var(--font-montserrat)';
   --font-body: 'var(--font-roboto)';
+  --font-accent: 'var(--font-dosis)';
 }
 
 :root,
@@ -37,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading), Arial, sans-serif;
+  font-family: var(--font-dosis), Arial, sans-serif;
 }
 
 .dark .bg-white {

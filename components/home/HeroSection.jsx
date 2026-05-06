@@ -50,10 +50,10 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* <Link href="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold text-center hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1 flex items-center justify-center group">
-                Get Free Quote
+              <Link href="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold text-center hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1 flex items-center justify-center group">
+                Get Started
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link> */}
+              </Link>
               {/* <Link href="/portfolio" className="px-8 py-4 rounded-full bg-white dark:bg-[#1a1a1a] text-foreground font-bold text-center border-2 border-gray-100 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-all">
                 View Portfolio
               </Link> */}

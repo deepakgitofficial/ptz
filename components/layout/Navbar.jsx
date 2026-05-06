@@ -6,8 +6,11 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
+import logo from '../../public/images/fav.png';
+import logoWhite from '../../public/images/fav-white.png';
 
 const Navbar = () => {
+  console.log(logo.src)
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -49,6 +52,7 @@ const Navbar = () => {
         { name: 'WordPress Development', path: '/services/wordpress-development' },
       ]
     },
+    { name: 'Free Tools', path: '/tools' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
@@ -61,8 +65,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
+            <Image src={logo.src} alt="Pure Tech Zone Logo" width={40} height={40} className="rounded-full" />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent heading-font">
-              {/* Pure Tech Zone */}
+              PureTechZone
             </span>
           </Link>
 

@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
-import { Montserrat, Roboto } from "next/font/google";
+import { Montserrat, Roboto, Dosis } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ThemeProvider from "@/components/layout/ThemeProvider";
 import FloatingElements from "@/components/ui/FloatingElements";
+
 
 // Primary font (headings)
 const montserrat = Montserrat({
@@ -19,6 +20,12 @@ const roboto = Roboto({
   variable: "--font-roboto",
   display: "swap",
 });
+const dosis = Dosis({
+  subsets: ['latin'],
+  variable: '--font-dosis',
+  display: 'swap',
+});
+
 
 export const metadata = {
   title: "Pure Tech Zone | Web Development Services in Baghpat",
@@ -30,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${roboto.variable}`}
+      className={`${montserrat.variable} ${roboto.variable} ${dosis.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col font-sans antialiased">
