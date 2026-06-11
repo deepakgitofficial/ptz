@@ -3,10 +3,10 @@
 
 
 @theme {
-  --color-primary: #00c2f0;
+  --color-primary: #2273a3;
   --color-primary-dark: #0f4560;
   --color-secondary: #0f2b40;
-  --color-accent: #00bfaa;
+  --color-accent: #274568;
   --font-heading: 'var(--font-montserrat)';
   --font-body: 'var(--font-roboto)';
   --font-accent: 'var(--font-dosis)';

@@ -48,12 +48,12 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-24 bg-white dark:bg-[#0a0a0a] relative overflow-hidden">
+    <section className="py-12 bg-white dark:bg-[#0a0a0a] relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] dark:opacity-[0.05]" />
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Testimonials</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
@@ -79,19 +79,19 @@ const TestimonialsSection = () => {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-gray-50 dark:bg-[#111111] p-8 md:p-10 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-lg h-full mx-2 flex flex-col relative">
-              
+
               <Quote className="absolute top-8 right-8 w-12 h-12 text-primary/10 dark:text-white/5" />
-              
+
               <div className="flex text-yellow-400 mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} fill={i < testimonial.rating ? "currentColor" : "none"} className={`w-5 h-5 ${i >= testimonial.rating ? 'text-gray-300 dark:text-gray-700' : ''}`} />
                 ))}
               </div>
-              
+
               <p className="text-gray-700 dark:text-gray-300 text-lg mb-8 italic flex-grow">
                 "{testimonial.content}"
               </p>
-              
+
               <div className="flex items-center">
                 <div className={`w-14 h-14 ${testimonial.avatarColor} rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md`}>
                   {testimonial.name.charAt(0)}

@@ -43,9 +43,9 @@ const EnqueryForm = () => {
         <h3 className="text-2xl font-bold text-white mb-2">
           Get in Touch
         </h3>
-        <p className="text-sm text-white/60 dark:text-white/80">
+        {/* <p className="text-sm text-white/60 dark:text-white/80">
           Start your digital journey with us.
-        </p>
+        </p> */}
       </div>
 
       {/* Form */}
@@ -92,7 +92,7 @@ const EnqueryForm = () => {
         {/* Message */}
         <textarea
           name="message"
-          rows="4"
+          rows="2"
           value={formData.message}
           onChange={handleChange}
           placeholder="Tell us about your project... *"

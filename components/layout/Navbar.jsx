@@ -52,7 +52,8 @@ const Navbar = () => {
         { name: 'WordPress Development', path: '/services/wordpress-development' },
       ]
     },
-    { name: 'Free Tools', path: '/tools' },
+    // { name: 'Free Tools', path: '/tools' },
+    { name: 'Useful Tools', path: 'https://ptz-tools.vercel.app', target: "_blank" },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
@@ -64,7 +65,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2" >
             <Image src={logo.src} alt="Pure Tech Zone Logo" width={40} height={40} className="rounded-full" />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent heading-font">
               PureTechZone
@@ -78,7 +79,9 @@ const Navbar = () => {
                 <Link
                   href={link.path}
                   className={`flex items-center font-medium transition-colors hover:text-primary ${pathname === link.path ? 'text-primary' : isScrolled ? 'text-foreground' : 'text-foreground'
-                    }`}
+                    }`
+                  }
+                 
                 >
                   {link.name}
                   {link.subLinks && <ChevronDown className="ml-1 w-4 h-4" />}

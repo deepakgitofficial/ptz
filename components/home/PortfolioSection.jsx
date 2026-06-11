@@ -8,7 +8,18 @@ import "react-multi-carousel/lib/styles.css";
 import { projects } from '@/data/projects';
 import { ArrowRight } from 'lucide-react';
 
-const PortfolioSection = () => {
+import { client } from "@/lib/sanity";
+import imageUrlBuilder from "@sanity/image-url";
+const builder = imageUrlBuilder(client);
+
+function urlFor(source) {
+  return builder.image(source);
+}
+
+const PortfolioSection = ({ data }) => {
+
+  console.log(data, "projectData123")
+
   const responsive = {
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
     tablet: { breakpoint: { max: 1024, min: 640 }, items: 2 },
@@ -16,7 +27,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-[#0c121e]">
+    <section className="py-12 bg-gray-50 dark:bg-[#0c121e]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -45,44 +56,58 @@ const PortfolioSection = () => {
           itemClass="px-4"
           arrows={true}
         >
-          {projects.slice(0, 6).map((project) => (
-            <div key={project.id} className="relative group rounded-2xl overflow-hidden shadow-lg h-[400px]">
+          {data?.map((project) => {
+            const imageUrl = project?.mainImage?.asset
+              ? urlFor(project.mainImage).url()
+              : (project?.image || "/images/portfolio/placeholder.webp");
+            const themeColor = project?.themeColor || project?.color || "";
+            const tagsList = project?.tags?.slice(0, 3) || [];
 
-              {/* Background Image */}
-              <div className="absolute inset-0 w-full h-full">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
+            return (
+              <div key={project._id || project.id} className="relative group rounded-2xl overflow-hidden shadow-lg h-[400px]">
 
-              {/* Gradient Overlay */}
-              <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-60 mix-blend-multiply group-hover:opacity-80 transition-opacity duration-300`} />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-
-              {/* Content */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold uppercase tracking-wider mb-3 w-fit">
-                  {project.category}
-                </span>
-                <h4 className="text-2xl font-bold text-white mb-2 font-heading">{project.title}</h4>
-                <p className="text-gray-200 text-sm mb-4 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.slice(0, 3).map((tag, i) => (
-                    <span key={i} className="text-xs text-white/80 bg-black/30 backdrop-blur-sm px-2 py-1 rounded">
-                      {tag}
-                    </span>
-                  ))}
+                {/* Background Image */}
+                <div className="absolute inset-0 w-full h-full">
+                  <Image
+                    src={imageUrl}
+                    alt={project.title || "Project Image"}
+                    fill
+                    sizes="(max-width: 740px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                 </div>
-              </div>
 
-            </div>
-          ))}
+                {/* Gradient Overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-t ${themeColor} opacity-60 mix-blend-multiply group-hover:opacity-80 transition-opacity duration-300`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+
+                {/* Content */}
+                <div className="absolute inset-0 p-8 flex flex-col justify-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold uppercase tracking-wider mb-3 w-fit">
+                    {project.category}
+                  </span>
+                  <h4 className="text-2xl font-bold text-white mb-2 font-heading">{project.title}</h4>
+                  <p className="text-gray-200 text-sm mb-4 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                    {project.description}
+                  </p>
+                  {tagsList.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {tagsList.map((tag, i) => (
+                        <span key={i} className="text-xs text-white/80 bg-black/30 backdrop-blur-sm px-2 py-1 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <Link href={`${project.projectUrl}`} target='_blank' rel="noopener noreferrer" className="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors shrink-0">
+                    View Details <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </div>
+
+              </div>
+            );
+          })}
         </Carousel>
 
       </div>

@@ -6,10 +6,10 @@ const PricingSection = () => {
   const plans = [
     {
       name: "Basic",
-      price: "₹4,999",
+      price: "₹3,999",
       desc: "Perfect for small businesses and personal portfolios.",
       features: [
-        "Up to 5 Pages Website",
+        "Up to 5-8 Pages Website",
         "Mobile Responsive Design",
         "Basic SEO Setup",
         "Contact Form Integration",
@@ -21,10 +21,10 @@ const PricingSection = () => {
     },
     {
       name: "Standard",
-      price: "₹9,999",
+      price: "₹6,999",
       desc: "Ideal for growing businesses needing dynamic features.",
       features: [
-        "Up to 10 Pages Website",
+        "Up to 10 - 20 Pages Website",
         "Premium UI/UX Design",
         "Advanced SEO & Speed Optimization",
         "CMS / Blog Integration",
@@ -37,7 +37,7 @@ const PricingSection = () => {
     },
     {
       name: "Premium",
-      price: "₹19,999",
+      price: "₹14,999",
       desc: "Comprehensive solution for E-commerce & corporate sites.",
       features: [
         "Unlimited Pages / E-commerce",
@@ -54,7 +54,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-[#0c121e]" id="pricing">
+    <section className="py-12 bg-gray-50 dark:bg-[#0c121e]" id="pricing">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-16 max-w-3xl mx-auto">

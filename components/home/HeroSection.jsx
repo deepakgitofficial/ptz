@@ -8,7 +8,7 @@ import EnqueryForm from "../home/EnqueryForm"
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden min-h-[90vh] flex items-center justify-center">
+    <section className="relative py-12 lg:py20  overflow-hidden min-h-[80vh] flex items-center justify-center">
 
       {/* Background Video & Overlay */}
       <div className="absolute inset-0 z-0">
@@ -19,51 +19,49 @@ const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/hero2.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay to make text readable */}
-        <div className="absolute inset-0 bg-black/60 dark:bg-black/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-black/40 dark:bg-black/60 mix-blend-multiply" />
 
         {/* Decorative blobs (optional, keeping your original gradients but lowered opacity) */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/3" />
       </div>
 
-      <div className=" relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className=" relative z-10 mx-auto px-4 sm:px-6 lg:px-8 container">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
 
-          <div className="max-w-7xl lg:px-10">
-            <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20 backdrop-blur-sm">
-              The Best Web Development Agency in Baghpat
-            </div>
+          <div className="lg:flex-[7] w-full">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-[30px] rounded-[15px] shadow-[0_15px_35px_rgba(0,0,0,0.2)]">
+              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20 backdrop-blur-sm">
+                Apne Business Ko Online Grow Karne Ka Smart Solution
+              </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white  mb-6 leading-tight font-heading" >
-              {/* <TypingEffect /> */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white  mb-6 leading-tight font-heading" >
+                {/* <TypingEffect /> */} 
+                We Build Websites That Grow Your Business 
+              </h1>
 
-              We Build Websites That Grow Your Business
+              <p className="text-lg md:text-xl text-white dark:text-gray-100 mb-8 leading-relaxed">
+                PureTechZone builds, secure, SEO friendly and beautiful websites that help businesses grow online. Let's create something amazing together.
+              </p>
 
-              {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent" ></span> */}
-            </h1>
-
-            <p className="text-lg md:text-xl text-white dark:text-gray-100 mb-8 leading-relaxed">
-              PureTechZone builds, secure, SEO friendly and beautiful websites that help businesses grow online. Let's create something amazing together.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold text-center hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1 flex items-center justify-center group">
-                Get Started
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              {/* <Link href="/portfolio" className="px-8 py-4 rounded-full bg-white dark:bg-[#1a1a1a] text-foreground font-bold text-center border-2 border-gray-100 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-all">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold text-center hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1 flex items-center justify-center group">
+                  Get Started
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                {/* <Link href="/portfolio" className="px-8 py-4 rounded-full bg-white dark:bg-[#1a1a1a] text-foreground font-bold text-center border-2 border-gray-100 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-all">
                 View Portfolio
               </Link> */}
+              </div>
+
             </div>
-
-
           </div>
 
           {/* enquery form */}
-          <div className="relative  max-w-2xl ">
+          <div className="relative lg:flex-[3] w-full">
             <div className="get-in-touch">
               <EnqueryForm />
             </div>

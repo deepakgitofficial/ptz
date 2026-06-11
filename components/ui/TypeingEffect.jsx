@@ -3,11 +3,12 @@ import React, { useState, useEffect } from "react";
 
 const TypingEffect = () => {
     const texts = [
-
-        "Smart Web & Mobile Solutions That Work",
-        "We Build Websites That Grow Your Business",
-        "Websites and Apps Made Easy",
-
+        "Website Banwao, Business Badhao 🚀",
+        "Aapke Business Ke Liye Smart Digital Solutions",
+        "Professional Websites Jo Customers Le Kar Aaye",
+        "Online Growth Ki Perfect Shuruaat",
+        "Website Aur Apps, Sab Kuch Ek Hi Jagah",
+        "Digital Presence Ko Next Level Par Le Jao"
     ];
 
     const [index, setIndex] = useState(0);

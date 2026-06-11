@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const CTASection = () => {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 relative overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-l from-primary to-teal-800"></div>
 

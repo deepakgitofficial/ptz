@@ -3,7 +3,7 @@ import { client } from "@/lib/sanity";
 import React from 'react'
 
 const BlogsData = async () => {
-    const data = await client.fetch(`*[_type == "blogPost"]`);
+    const data = await client.fetch(`*[_type == "ProjectsSchema"]`);
     console.log(data);
     return (
         <div>

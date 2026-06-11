@@ -53,7 +53,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white dark:bg-[#0a0a0a]">
+    <section className="py-12 bg-white dark:bg-[#0a0a0a]">
       <div className="text-center mb-8 max-w-3xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
           Frequently Asked Questions

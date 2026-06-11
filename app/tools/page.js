@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { IoGridSharp } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa6";
+import BlogsData from "@/components/BlogsData";
 export default function Page() {
   return (
     <section className="bg-gray-100 dark:bg-gray-800 py-12">
@@ -16,6 +17,8 @@ export default function Page() {
               </div>
             </div>
           </Link>
+
+          <BlogsData />
         </div>
       </div>
     </section>
