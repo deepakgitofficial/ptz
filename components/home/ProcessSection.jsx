@@ -1,31 +1,31 @@
 import React from 'react';
-import { ClipboardList, PenTool, Code2, Bug, Rocket } from 'lucide-react';
+import { ClipboardList, PenTool, Code2, Bug, Rocket, Globe, Globe2 } from 'lucide-react';
 
 const ProcessSection = () => {
   const steps = [
     {
-      title: "Requirement",
-      desc: "Understanding your business goals, target audience, and project requirements.",
+      title: "Requirement Samajhna",
+      desc: "Sabse pehle hum aapke business, goals aur project ki zarurat ko achhi tarah samajhte hain.",
       icon: <ClipboardList className="w-8 h-8 text-primary" />
     },
     {
-      title: "Design",
-      desc: "Creating visually stunning UI/UX layouts and prototypes for your approval.",
+      title: "Design Banana",
+      desc: "Iske baad hum attractive aur user-friendly design create karte hain jo aapko pasand aaye.",
       icon: <PenTool className="w-8 h-8 text-accent" />
     },
     {
       title: "Development",
-      desc: "Building the website using modern frameworks like Next.js and Tailwind CSS.",
+      desc: "Approval ke baad hum website ya mobile app ko latest technology ke saath develop karte hain.",
       icon: <Code2 className="w-8 h-8 text-pink-500" />
     },
     {
       title: "Testing",
-      desc: "Rigorous quality assurance, performance testing, and bug fixing.",
+      desc: "Launch se pehle hum sab kuch check karte hain taaki website ya app bina kisi issue ke chale.",
       icon: <Bug className="w-8 h-8 text-purple-500" />
     },
     {
       title: "Delivery",
-      desc: "Deploying the final product and providing continuous support.",
+      desc: "Final project ready hone ke baad hum deliver karte hain aur aage support bhi provide karte hain.",
       icon: <Rocket className="w-8 h-8 text-yellow-500" />
     }
   ];
@@ -36,13 +36,21 @@ const ProcessSection = () => {
 
         <div className="text-center mb-16 max-w-3xl mx-auto">
           {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Workflow</h2> */}
-          <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-heading">
-            {/* How We Execute Your Project */}
-            Our Workflow
-          </h3>
-          {/* <p className="text-gray-600 dark:text-gray-400 text-lg">
-            A proven, agile methodology ensuring your project is delivered on time, within budget, and above expectations.
-          </p> */}
+          {/* <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary dark:text-white font-semibold text-xs tracking-wider uppercase mb-4 border border-primary/20">
+            <Globe2 className="w-3.5 h-3.5" />
+           
+          </div> */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
+            Hamara
+            {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              Working Process
+            </span>{" "}
+          </h2>
+
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
+            Hum ek smart aur simple process follow karte hain taaki aapka project time par, budget ke andar aur best quality ke saath deliver ho.
+          </p>
         </div>
 
         <div className="relative">

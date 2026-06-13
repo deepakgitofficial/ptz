@@ -7,46 +7,48 @@ const PricingSection = () => {
     {
       name: "Basic",
       price: "₹3,999",
-      desc: "Perfect for small businesses and personal portfolios.",
+      desc: "Small business aur personal website ke liye perfect plan.",
       features: [
-        "Up to 5-8 Pages Website",
-        "Mobile Responsive Design",
+        "5-8 Pages Tak Website",
+        "Mobile Friendly Design",
         "Basic SEO Setup",
         "Contact Form Integration",
-        "1 Month Free Support",
-        "Delivery in 5 Days"
+        "1 Mahine Free Support",
+        "5 Din Me Delivery"
       ],
       isPopular: false,
       btnClass: "bg-white dark:bg-[#1a1a1a] text-foreground border border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary",
     },
+
     {
       name: "Standard",
       price: "₹6,999",
-      desc: "Ideal for growing businesses needing dynamic features.",
+      desc: "Growing business ke liye best plan with advanced features.",
       features: [
-        "Up to 10 - 20 Pages Website",
+        "10-20 Pages Tak Website",
         "Premium UI/UX Design",
         "Advanced SEO & Speed Optimization",
         "CMS / Blog Integration",
         "Social Media Integration",
-        "3 Months Free Support",
-        "Delivery in 10 Days"
+        "3 Mahine Free Support",
+        "10 Din Me Delivery"
       ],
       isPopular: true,
       btnClass: "bg-gradient-to-r from-primary to-accent text-white shadow-lg hover:shadow-primary/30",
     },
+
     {
       name: "Premium",
       price: "₹14,999",
-      desc: "Comprehensive solution for E-commerce & corporate sites.",
+      desc: "E-commerce aur large business website ke liye complete solution.",
       features: [
-        "Unlimited Pages / E-commerce",
-        "Payment Gateway Integration",
-        "Custom Next.js & React App",
+        "Unlimited Pages / E-commerce Website",
+        "Online Payment Integration",
+        "Custom Next.js & React Development",
         "Advanced Security & Database",
         "Schema Markup & Local SEO",
-        "6 Months Free Support",
-        "Delivery in 15-20 Days"
+        "6 Mahine Free Support",
+        "15-20 Din Me Delivery"
       ],
       isPopular: false,
       btnClass: "bg-white dark:bg-[#1a1a1a] text-foreground border border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary",

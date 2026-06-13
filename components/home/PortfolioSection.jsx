@@ -33,14 +33,20 @@ const PortfolioSection = ({ data }) => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div className="max-w-2xl text-left mb-6 md:mb-0">
             {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Portfolio</h2> */}
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-heading">
-              Our Portfolio
-            </h3>
-            {/* <p className="text-gray-600 dark:text-gray-400 text-lg">
-              Explore some of our recently completed projects. Each website is built with passion, precision, and performance in mind.
-            </p> */}
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
+              Hamara
+              {" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+                Recent Projects
+              </span>{" "}
+            </h2>
+
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              Yahan aap hamare kuch latest projects dekh sakte hain, jo humne best design, speed aur quality ko dhyan me rakhkar banaye hain.
+            </p>
           </div>
-          <Link href="/portfolio" className="inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors shrink-0">
+          <Link href="/portfolio" className="underline inline-flex items-center text-primary font-bold hover:text-primary-dark transition-colors shrink-0">
             View All Projects <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>

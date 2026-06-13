@@ -55,7 +55,8 @@ const Navbar = () => {
     // { name: 'Free Tools', path: '/tools' },
     { name: 'Useful Tools', path: 'https://ptz-tools.vercel.app', target: "_blank" },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'FAQ', path: '/faq' },
+    // { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -81,7 +82,7 @@ const Navbar = () => {
                   className={`flex items-center font-medium transition-colors hover:text-primary ${pathname === link.path ? 'text-primary' : isScrolled ? 'text-foreground' : 'text-foreground'
                     }`
                   }
-                 
+
                 >
                   {link.name}
                   {link.subLinks && <ChevronDown className="ml-1 w-4 h-4" />}

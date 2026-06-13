@@ -34,22 +34,24 @@ const HeroSection = () => {
 
           <div className="lg:flex-[7] w-full">
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-[30px] rounded-[15px] shadow-[0_15px_35px_rgba(0,0,0,0.2)]">
-              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20 backdrop-blur-sm">
-                Apne Business Ko Online Grow Karne Ka Smart Solution
+              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-white font-medium text-lg mb-6 border border-primary/20 backdrop-blur-sm">
+
+                Aapka Business, Hamari Technology
               </div>
 
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white  mb-6 leading-tight font-heading" >
-                {/* <TypingEffect /> */} 
-                We Build Websites That Grow Your Business 
+                {/* <TypingEffect /> */}
+
+                Website Banwao, Business Badhao
               </h1>
 
               <p className="text-lg md:text-xl text-white dark:text-gray-100 mb-8 leading-relaxed">
-                PureTechZone builds, secure, SEO friendly and beautiful websites that help businesses grow online. Let's create something amazing together.
+                PureTechZone ke saath professional website, app jo aapke business ko Online laaye.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold text-center hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1 flex items-center justify-center group">
-                  Get Started
+                  Abhi Contact Karein
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 {/* <Link href="/portfolio" className="px-8 py-4 rounded-full bg-white dark:bg-[#1a1a1a] text-foreground font-bold text-center border-2 border-gray-100 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-all">

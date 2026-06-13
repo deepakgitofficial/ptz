@@ -56,7 +56,7 @@ const EnqueryForm = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Full Name *"
+          placeholder="Aapka Naam *"
           required
           className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder:text-gray-200 focus:outline-none"
         />
@@ -95,7 +95,7 @@ const EnqueryForm = () => {
           rows="2"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Tell us about your project... *"
+          placeholder="Apne Project ke baare me batayein... *"
           required
           className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder:text-gray-200 focus:outline-none resize-none"
         />

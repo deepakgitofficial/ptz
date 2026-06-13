@@ -99,7 +99,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="w-full h-[400px]">
+      {/* <section className="w-full h-[400px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1723.4884302733872!2d77.22756101634697!3d28.94266040630585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c53001974f7e5%3A0xba962bee9de802b9!2sBaghpat%2C%20uttar%20pradesh!5e0!3m2!1sen!2sin!4v1776518773278!5m2!1sen!2sin"
           width="100%"
@@ -110,7 +110,7 @@ export default function ContactPage() {
           referrerPolicy="no-referrer-when-downgrade"
           className="grayscale hover:grayscale-0 transition-all duration-500"
         />
-      </section>
+      </section> */}
       {/* <CTASection /> */}
     </>
   );
