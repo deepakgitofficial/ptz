@@ -25,7 +25,7 @@ const serviceLinks = [
 
 const supportLinks = [
   { label: "FAQ", href: "/faq" },
-  { label: 'Useful Tools', href: 'https://ptz-tools.vercel.app', },
+  { label: 'Others Tools', href: 'https://ptz-tools.vercel.app', },
   // { label: "Privacy Policy", href: "/privacy-policy" },
   // { label: "Terms of Service", href: "/terms-of-service" },
   // { label: "Get Free Quote", href: "/contact" },
@@ -132,7 +132,7 @@ const Footer = () => {
                   +91 81716 54421
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
                 <a
                   href="mailto:deepsoftskills@gmail.com"
@@ -140,7 +140,7 @@ const Footer = () => {
                 >
                   deepsoftskills@gmail.com
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* Socials */}
@@ -226,7 +226,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="mt-8 flex items-center gap-3 p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 hover:bg-emerald-100 dark:hover:bg-emerald-500/20 transition-all duration-300 group"
             >
-              <div className="rounded-xl bg-emerald-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <div className="rounded-md p-2 bg-emerald-500 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                 <MdPlaylistAddCheckCircle className="text-white " size={30} />
               </div>
               <div>
@@ -234,9 +234,7 @@ const Footer = () => {
                   <p className="text-xs font-bold text-emerald-700 dark:text-emerald-400">
                     Other Useful Tools
                   </p>
-                  <p className="text-[11px] text-emerald-600 dark:text-emerald-500">
-                    Daily life me use hone wale tools
-                  </p>
+
                 </Link>
               </div>
             </a>
@@ -250,7 +248,7 @@ const Footer = () => {
             <span className="font-semibold text-gray-600 dark:text-gray-400">
               Pure Tech Zone
             </span>
-            . All rights reserved. Made with ❤️ in Baghpat, India.
+            . All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-xs text-gray-400 dark:text-gray-500">
             <Link

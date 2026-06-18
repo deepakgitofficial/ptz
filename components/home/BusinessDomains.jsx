@@ -28,7 +28,7 @@ const industries = [
     {
         icon: FaUtensils,
         title: "Restaurant & Cafes",
-        description: "Digital solutions for online ordering, reservations, and customer engagement.",
+        description: "Online ordering, table booking aur customer engagement ke liye smart digital solutions.",
         gradient: "from-orange-400 to-rose-500",
         glow: "group-hover:shadow-orange-400/20",
         tag: "Food & Beverage",
@@ -36,7 +36,7 @@ const industries = [
     {
         icon: FaPlaneDeparture,
         title: "Tour & Travel Agencies",
-        description: "Booking systems, travel portals, and seamless customer experiences.",
+        description: "Travel booking system, travel portal aur better customer experience ke liye solutions.",
         gradient: "from-sky-400 to-blue-600",
         glow: "group-hover:shadow-sky-400/20",
         tag: "Travel",
@@ -44,7 +44,7 @@ const industries = [
     {
         icon: FaHandsHelping,
         title: "NGOs & Non-Profit",
-        description: "Donation platforms, awareness campaigns, and volunteer management.",
+        description: "Donation system, awareness campaigns aur volunteer management ke liye digital platform.",
         gradient: "from-emerald-400 to-teal-600",
         glow: "group-hover:shadow-emerald-400/20",
         tag: "Social Impact",
@@ -52,7 +52,7 @@ const industries = [
     {
         icon: FaStore,
         title: "Retail Businesses",
-        description: "Modern retail management systems and customer-focused solutions.",
+        description: "Retail business management aur customer experience improve karne ke liye smart solutions.",
         gradient: "from-fuchsia-400 to-purple-600",
         glow: "group-hover:shadow-fuchsia-400/20",
         tag: "Retail",
@@ -60,7 +60,7 @@ const industries = [
     {
         icon: FaShoppingCart,
         title: "E-commerce Stores",
-        description: "Scalable online stores designed to increase sales and conversions.",
+        description: "Online store solutions jo sales badhaye aur zyada customers tak pahunchne me help kare.",
         gradient: "from-violet-400 to-indigo-600",
         glow: "group-hover:shadow-violet-400/20",
         tag: "E-commerce",
@@ -68,7 +68,7 @@ const industries = [
     {
         icon: FaHeartbeat,
         title: "Healthcare & Clinics",
-        description: "Patient management, appointment booking, and healthcare portals.",
+        description: "Patient management, appointment booking aur healthcare services ke liye digital systems.",
         gradient: "from-pink-400 to-rose-600",
         glow: "group-hover:shadow-pink-400/20",
         tag: "Healthcare",
@@ -76,7 +76,7 @@ const industries = [
     {
         icon: FaBuilding,
         title: "Real Estate",
-        description: "Property listing platforms with lead generation and CRM integration.",
+        description: "Property listing, lead generation aur CRM integration ke liye advanced solutions.",
         gradient: "from-amber-400 to-orange-600",
         glow: "group-hover:shadow-amber-400/20",
         tag: "Real Estate",
@@ -84,7 +84,7 @@ const industries = [
     {
         icon: FaGraduationCap,
         title: "Education & Training",
-        description: "E-learning platforms, LMS solutions, and student engagement tools.",
+        description: "Online learning platform, student management aur training systems ke liye solutions.",
         gradient: "from-cyan-400 to-sky-600",
         glow: "group-hover:shadow-cyan-400/20",
         tag: "EdTech",
@@ -92,7 +92,7 @@ const industries = [
     {
         icon: FaWallet,
         title: "Finance & Insurance",
-        description: "Secure financial applications with compliance-ready architecture.",
+        description: "Secure finance apps aur insurance management ke liye reliable digital solutions.",
         gradient: "from-lime-400 to-green-600",
         glow: "group-hover:shadow-lime-400/20",
         tag: "FinTech",
@@ -100,7 +100,7 @@ const industries = [
     {
         icon: FaTruckMoving,
         title: "Logistics & Transportation",
-        description: "Fleet tracking, logistics automation, and route optimization systems.",
+        description: "Delivery tracking, transport management aur route automation systems.",
         gradient: "from-yellow-400 to-amber-600",
         glow: "group-hover:shadow-yellow-400/20",
         tag: "Logistics",
@@ -108,7 +108,7 @@ const industries = [
     {
         icon: FaIndustry,
         title: "Manufacturing",
-        description: "ERP integrations and operational efficiency management solutions.",
+        description: "Business workflow automation aur management system se operations ko fast banaye.",
         gradient: "from-slate-400 to-gray-600",
         glow: "group-hover:shadow-slate-400/20",
         tag: "Industry",
@@ -116,7 +116,7 @@ const industries = [
     {
         icon: FaDumbbell,
         title: "Fitness & Wellness",
-        description: "Membership systems, fitness tracking, and wellness engagement apps.",
+        description: "Gym membership, fitness tracking aur wellness apps ke liye digital solutions.",
         gradient: "from-red-400 to-rose-600",
         glow: "group-hover:shadow-red-400/20",
         tag: "Health",
@@ -124,7 +124,7 @@ const industries = [
     {
         icon: FaHotel,
         title: "Hospitality & Hotels",
-        description: "Reservation management and personalized guest experience solutions.",
+        description: "Hotel booking system aur guest management ke liye modern digital solutions.",
         gradient: "from-purple-400 to-violet-600",
         glow: "group-hover:shadow-purple-400/20",
         tag: "Hospitality",
@@ -132,7 +132,7 @@ const industries = [
     {
         icon: FaSpa,
         title: "Beauty & Salons",
-        description: "Appointment scheduling, loyalty programs, and client management.",
+        description: "Appointment booking, customer management aur loyalty programs ke liye systems.",
         gradient: "from-pink-300 to-fuchsia-500",
         glow: "group-hover:shadow-pink-400/20",
         tag: "Beauty",
@@ -140,7 +140,7 @@ const industries = [
     {
         icon: FaCar,
         title: "Automotive Services",
-        description: "Workshop management, service booking, and customer retention tools.",
+        description: "Service booking, workshop management aur customer support systems.",
         gradient: "from-blue-400 to-indigo-600",
         glow: "group-hover:shadow-blue-400/20",
         tag: "Automotive",
@@ -148,7 +148,7 @@ const industries = [
     {
         icon: FaRocket,
         title: "Startups & Enterprises",
-        description: "Scalable digital products built for growth and innovation.",
+        description: "Fast growing business ke liye scalable digital products aur custom solutions.",
         gradient: "from-primary to-accent",
         glow: "group-hover:shadow-primary/20",
         tag: "Startup",
@@ -183,11 +183,11 @@ const BusinessDomains = () => {
                         Industries We Serve
                     </span> */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
-                        Hum Sabhi Industries Ke Liye{" "}
+                        Industries Ke Liye{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                             Digital Solutions
                         </span>{" "}
-                        Banate Hain
+
                     </h2>
                     <p className="text-lg text-slate-600 dark:text-gray-400 leading-relaxed">
                         Hum modern technology ke saath powerful websites aur apps develop karte hain jo har business ko online strong aur future-ready banate hain.

@@ -53,9 +53,9 @@ const Navbar = () => {
       ]
     },
     // { name: 'Free Tools', path: '/tools' },
-    { name: 'Useful Tools', path: 'https://ptz-tools.vercel.app', target: "_blank" },
+    { name: 'Our Products', path: 'https://ptz-tools.vercel.app', target: "_blank" },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'FAQ', path: '/faq' },
+    // { name: 'FAQ', path: '/faq' },
     // { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -68,8 +68,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" >
             <Image src={logo.src} alt="Pure Tech Zone Logo" width={40} height={40} className="rounded-full" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent heading-font">
-              PureTechZone
+            <span className=" heading-font">
+              <span className="text-2xl font-bold  text-primary heading-font">PureTech</span>
+              <span className="text-2xl font-bold  text-accent heading-font">Zone</span>
             </span>
           </Link>
 

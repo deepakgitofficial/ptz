@@ -17,14 +17,14 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="container relative z-10 mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4 font-heading">
-            Contact{" "}
+
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-              Us
+              Contact Us
             </span>
           </h1>
+
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            We are always excited to discuss new projects, creative ideas, or
-            opportunities to be part of your visions.
+            Agar aapko website, mobile app ya kisi digital project par kaam karwana hai, toh humse baat karein. Hum aapke ideas ko reality me badalne ke liye ready hain.
           </p>
         </div>
       </section>

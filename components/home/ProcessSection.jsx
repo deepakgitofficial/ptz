@@ -41,10 +41,10 @@ const ProcessSection = () => {
            
           </div> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
-            Hamara
+            Working
             {" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-              Working Process
+              Process
             </span>{" "}
           </h2>
 

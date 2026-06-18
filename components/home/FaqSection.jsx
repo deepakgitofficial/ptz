@@ -89,12 +89,12 @@ const FaqSection = () => {
 
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
-              Koi Sawal Hai?
+              Aapke Sawalon Ke   Jawaab
               {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-                Hum Yahan
-              </span>{" "}
-              Help Ke Liye Hain.
+                Yahan   Hai
+              </span>
+
             </h2>
 
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
@@ -106,7 +106,7 @@ const FaqSection = () => {
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-semibold text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
-                <MessageSquare className="w-4 h-4" /> Ask a Custom Question
+                <MessageSquare className="w-4 h-4" /> Aaj Hi Contact Karein
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

@@ -35,10 +35,10 @@ const PortfolioSection = ({ data }) => {
             {/* <h2 className="text-secondary dark:text-primary tracking-wider font-bold text-sm uppercase mb-3">Our Portfolio</h2> */}
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-5 leading-tight">
-              Hamara
+              Latest
               {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-                Recent Projects
+                Projects
               </span>{" "}
             </h2>
 
