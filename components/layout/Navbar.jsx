@@ -52,11 +52,8 @@ const Navbar = () => {
         { name: 'WordPress Development', path: '/services/wordpress-development' },
       ]
     },
-    // { name: 'Free Tools', path: '/tools' },
-    { name: 'Our Products', path: 'https://ptz-tools.vercel.app', target: "_blank" },
+
     { name: 'Portfolio', path: '/portfolio' },
-    // { name: 'FAQ', path: '/faq' },
-    // { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
 
